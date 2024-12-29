@@ -1,0 +1,29 @@
+<!-- Create a function in JavaScript, that takes a number as input and checks if the number is even or odd. 
+Use prompt() to get the user input and alert() to display whether the number is even or odd.  -->
+
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Even or Odd Checker</title> 
+</head> 
+<body> 
+<h1>Even or Odd Number Checker</h1> 
+<script> 
+// Function to check if a number is even or odd 
+function checkEvenOdd() { 
+let number = parseInt(prompt("Enter a number:")); 
+// Check if the number is even or odd using modulo operator 
+if (number % 2 === 0) { 
+alert(number + " is an Even number."); 
+} else { 
+alert(number + " is an Odd number."); 
+} 
+} 
+// Call the function to execute 
+checkEvenOdd(); 
+</script> 
+</body> 
+</html>

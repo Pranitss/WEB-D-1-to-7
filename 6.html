@@ -1,0 +1,43 @@
+<!-- Write a program in Java Script which should prompt the user to enter the result of Question- What is the 
+result of 10+10?‖. The user will be given a chance to answer the question. If the answer is correct then 
+the program should raise a message-―Congratulations‖. If the answer is wrong then the program 
+should again ask the same question. If the answer is correct then the message should be –―Cleared in 
+the second round‖ else another message should be generated specifying –― Sorry, try next time‖ and the 
+program should exit. Note – Make use of If. Else.  -->
+ 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Quiz Program</title> 
+    <script> 
+        function askQuestion()  
+        { 
+            // First attempt 
+            let answer = prompt("What is the result of 10 + 10 ?"); 
+            if (answer == "20") { 
+                alert("Congratulations!"); 
+                return; 
+            }  
+            else  
+            { 
+                // Second attempt 
+                answer = prompt("Wrong answer! Try again: What is the result of 10 + 10 ?"); 
+                if (answer == "20")  
+                { 
+                    alert("Cleared in the second round!"); 
+                }  
+                else  
+                { 
+                    alert("Sorry, try next time."); 
+                } 
+            } 
+        } 
+    </script> 
+</head> 
+<body onload="askQuestion()"> 
+    <h1>JavaScript Quiz</h1> 
+    <p>Check the prompt to answer the quiz question!</p> 
+</body> 
+</html>

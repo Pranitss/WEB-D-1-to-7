@@ -1,0 +1,37 @@
+<!-- Create a simple calculator by using JavaScript, that takes two numbers from the user and performs 
+basic arithmetic operations (addition, subtraction, multiplication, and division). Use prompt() to get 
+input from the user and alert() to display the result.  -->
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Simple Calculator</title> 
+</head> 
+<body> 
+<h1>Simple Calculator</h1> 
+<script> 
+// Taking input from the user 
+let num1 = parseFloat(prompt("Enter the first number:")); 
+let num2 = parseFloat(prompt("Enter the second number:")); 
+// Taking the operation choice 
+let operation = prompt("Enter the operation (+, -, *, /):"); 
+// Conditional statements to perform the operation 
+let result; 
+if (operation === "+") { 
+result = num1 + num2; 
+} else if (operation === "-") { 
+result = num1 - num2; 
+} else if (operation === "*") { 
+result = num1 * num2; 
+} else if (operation === "/") { 
+result = num1 / num2; 
+} else { 
+result = "Invalid operation!"; 
+} 
+// Display the result using alert 
+alert("The result is: " + result); 
+</script> 
+</body> 
+</html>

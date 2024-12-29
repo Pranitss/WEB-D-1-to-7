@@ -1,0 +1,27 @@
+<!-- Write a JavaScript function that reverses a string entered by the user. Use prompt() to get the string 
+input and display the reversed string in the browser using document.write() -->
+
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Reverse String</title> 
+</head> 
+<body> 
+<h1>String Reversal</h1> 
+<script> 
+// Function to reverse a string 
+function reverseString(str) { 
+return str.split('').reverse().join(''); 
+} 
+// Get the string input from the user 
+let userInput = prompt("Enter a string to reverse:"); 
+// Reverse the string and display it 
+let reversed = reverseString(userInput); 
+document.write("Original String: " + userInput + "<br>"); 
+document.write("Reversed String: " + reversed); 
+</script> 
+</body> 
+</html>
